@@ -2417,7 +2417,7 @@ body.lock {
 }
 
 .company {
-  margin-bottom: 30px;
+  margin-bottom: 132px;
 }
 @media (max-width: 1100px) {
   .company {
@@ -2889,8 +2889,6 @@ body.lock1 {
   -webkit-backface-visibility: hidden;
   border-radius: 37.2008px;
   border: 3px solid rgba(255, 255, 255, 0.1);
-  border-bottom: none;
-  border-top: none;
 }
 @media (max-width: 720px) {
   .form-popup__content {
@@ -3066,7 +3064,7 @@ body.lock1 {
   border-radius: 8.11502px;
   line-height: 32px;
   height: 150px;
-  color: #333333;
+  color: #ffffff;
   resize: none;
 }
 .form-popup textarea::-webkit-input-placeholder{
