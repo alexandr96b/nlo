@@ -39,15 +39,16 @@
 					<li class="menu__item"><img src="img/menu/3.png" alt=""><a href="#cases" class="menu__link">Кейсы</a></li>
 					<li class="menu__item menu__link_hidden"><img src="img/menu/4.png" alt=""><a href="#clients" class="menu__link">Клиенты</a></li>
 					<li class="menu__item menu-link_xs"><img src="img/menu/4.png" alt=""><a href="#mainpage" class="menu__link">Клиенты</a></li>
-					<li class="menu__item"><img src="img/menu/5.png" alt=""><a href="#contacts" class="menu__link">Контакты</a></li>				
-					<div class="header__language">
+					<li class="menu__item"><img src="img/menu/5.png" alt=""><a href="#contacts" class="menu__link">Контакты</a></li>
+
+					<a href="en/index.html" class="header__language">
 						<span>Ru</span>
-						<div class="header__checkbox">
-							<input id="checkbox1" type="checkbox">
-							<label for="checkbox1"><span></span><p></p></label>				
-						</div>				
+						<div class="header__checkbox" style="pointer-events: none;">
+							<input id="checkbox" type="checkbox">
+							<label for="checkbox"><span></span><p></p></label>
+						</div>
 						<span>Eng</span>
-					</div>				
+					</a>
 
 				</ul>
 			</nav>
@@ -180,7 +181,7 @@
 				</div>
 				<div class="marketing__body">
 					<div class="marketing__image">
-						<img src="img/marketing/1.png" alt="">
+						<img src="img/marketing/111.png" alt="">
 					</div>
 					<div class="marketing__text">
 						<p data-aos="fade-up" data-aos-duration="1300">
@@ -1315,7 +1316,7 @@
       <div class="form-popup__title">Отправить запрос</div>
 		<input type="text" placeholder="Имя и фамилия*" required>
 		<input type="text" placeholder="Название компании">
-		<input type="tel" placeholder="Телефон*" required>
+		<input type="tel"  onkeypress='validate(event)' placeholder="Телефон*" required>
 		<input type="email" placeholder="e-mail*" required>
    	<span>
    		Опишите ваши цели и задачи

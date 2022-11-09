@@ -792,7 +792,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 540px;
   margin-bottom: 35px;
 }
 .menu__item:nth-last-of-type(1) {
@@ -1247,7 +1247,7 @@ body.lock {
   }
 }
 .marketing__title {
-  font-weight: 450;
+  font-weight: 400;
   font-size: 45px;
   line-height: 1.2222222222;
   text-align: center;
@@ -1288,24 +1288,26 @@ body.lock {
   }
 }
 .marketing__image {
-  margin-top: -130px;
-  margin-left: -250px;
+  margin-top: -31px;
+  margin-left: -234px;
   width: 1022px;
+  height: 930px;
   z-index: -1;
 }
 @media (max-width: 1350px) {
   .marketing__image {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     width: 100%;
     margin-left: -20%;
+    height: auto;
   }
 }
 .marketing__image img {
   width: 100%;
 }
 .marketing__text {
-  font-weight: 450;
+  font-weight: 400;
   font-size: 35px;
   line-height: 1.1428571429;
   color: #4F3A53;
@@ -1321,7 +1323,7 @@ body.lock {
   margin-top: 40px;
 }
 .marketing__text b {
-  font-weight: 600;
+  font-weight: 500;
   color: #B74C80;
 }
 @media (max-width: 767px) {
@@ -1379,7 +1381,7 @@ body.lock {
 .surprised__container {
   font-weight: 500;
   font-size: 55px;
-  line-height: 65px;
+  line-height: 1;
   color: #FFFFFF;
 }
 @media (max-width: 1250px) {
@@ -1391,7 +1393,7 @@ body.lock {
   margin-top: 30px;
   text-transform: uppercase;
   font-size: 85px;
-  line-height: 120px;
+  line-height: 1.1;
   font-weight: 600;
 }
 
@@ -1483,7 +1485,7 @@ body.lock {
   font-weight: 500;
   font-size: 55px;
   line-height: 100px;
-  color: #261D2F;
+  color: #4F3A53;
 }
 @media (max-width: 1470px) {
   .nlo__overtitle {
@@ -1499,7 +1501,7 @@ body.lock {
   font-size: 85px;
   line-height: 1.2727272727;
   text-align: right;
-  color: #000000;
+  color: #4F3A53;
 }
 @media (max-width: 1470px) {
   .nlo__title {
@@ -1796,7 +1798,7 @@ body.lock {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   opacity: 0;
-  left: 75px;
+  left: 100px;
   top: 0;
   pointer-events: none;
   font-size: 30px;
@@ -1826,7 +1828,7 @@ body.lock {
   }
 }
 .nlo__item:nth-child(4) .nlo__descr {
-  left: 150px;
+  left: 175px;
 }
 @media (max-width: 1470px) {
   .nlo__item:nth-child(4) .nlo__descr {
@@ -1844,11 +1846,11 @@ body.lock {
   }
 }
 .nlo__item:nth-child(5) .nlo__descr {
-  left: 165px;
+  left: 175px;
 }
 @media (max-width: 1470px) {
   .nlo__item:nth-child(5) .nlo__descr {
-    left: -150px;
+    left: -175px;
     top: calc(60px + 40 * (100vw - 375px) / 1095);
   }
 }
@@ -2417,7 +2419,7 @@ body.lock {
 }
 
 .company {
-  margin-bottom: 132px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1100px) {
   .company {
@@ -2878,7 +2880,7 @@ body.lock1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 70px 55px 55px;
+  padding: 35px 55px 55px;
   background: linear-gradient(2.06deg, rgba(255, 255, 255, 0.7) 15.09%, rgba(255, 255, 255, 0.1) 104.54%);
   -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.05);
@@ -2889,24 +2891,40 @@ body.lock1 {
   -webkit-backface-visibility: hidden;
   border-radius: 37.2008px;
   border: 3px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  border-top: none;
+}
+@media (max-width: 1601px) {
+  .form-popup__content {
+    padding: 20px 30px 30px;
+  }
 }
 @media (max-width: 720px) {
   .form-popup__content {
     width: calc(100vw - 50px);
     border: 3px solid rgba(255, 255, 255, 0.1);
-    padding: 30px 35px;
+    padding: 25px 15px;
     border-radius: 18px;
+      border-bottom: none;
+      border-top: none;
   }
 }
 
 .form-popup__title {
   font-weight: 600;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 58px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1601px) {
+  .form-popup__title {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 720px) {
   .form-popup__title {
@@ -2956,22 +2974,51 @@ body.lock1 {
 
 .form-popup input {
   width: 100%;
+  height: 66px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 8.11502px;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 30px 15px;
+  padding:0px 15px;
   margin-bottom: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 1601px) {
+  .form-popup input{
+    height: 48px;
+    padding: 0px 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .form-popup input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .form-popup input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .form-popup input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .form-popup input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 @media (max-width: 720px) {
   .form-popup input {
+    height: 40px;
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 10px;
-    padding: 12.5px 15px;
+    padding: 0px 15px;
   }
 }
 
@@ -2982,7 +3029,6 @@ body.lock1 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .form-popup input::-moz-placeholder {
   font-weight: 400;
   font-size: 22px;
@@ -2998,15 +3044,6 @@ body.lock1 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
-.form-popup input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
 .form-popup input::placeholder {
   font-weight: 400;
   font-size: 22px;
@@ -3047,6 +3084,13 @@ body.lock1 {
   padding-left: 15px;
   margin-bottom: 20px;
 }
+@media (max-width: 1601px) {
+  .form-popup span {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+}
 @media (max-width: 720px) {
   .form-popup span {
     font-size: 12px;
@@ -3060,11 +3104,11 @@ body.lock1 {
   width: 100%;
   padding: 20px 15px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 8.11502px;
   line-height: 32px;
   height: 150px;
-  color: #ffffff;
+  color: #333333;
   resize: none;
 }
 .form-popup textarea::-webkit-input-placeholder{
@@ -3072,6 +3116,13 @@ body.lock1 {
 }
 .form-popup textarea:-moz-placeholder{
   color: #AFAFAF;
+}
+@media (max-width: 1601px) {
+  .form-popup textarea{
+    height: 100px;
+    font-size: 18px;
+    line-height: 16px;
+  }
 }
 @media (max-width: 720px) {
   .form-popup textarea {

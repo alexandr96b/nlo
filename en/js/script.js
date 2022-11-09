@@ -5,11 +5,11 @@ $(document).ready(function (event) {
       $('#logotypes2').css('animation', 'logotypes2 180s linear infinite 85s');
 
       $('.company__cards:first-child').width($('#marquee1').width());
-      $('#marquee1').css('animation', 'marquee1 50s linear infinite -25s');
-      $('#marquee2').css('animation', 'marquee2 50s linear infinite 0s');
+      $('#marquee1').css('animation', 'marquee1 100s linear infinite -50s');
+      $('#marquee2').css('animation', 'marquee2 100s linear infinite 0s');
       $('.company__cards:nth-child(2)').width($('#marquee3').width());
-      $('#marquee3').css('animation', 'marquee3 50s linear infinite -25s');
-      $('#marquee4').css('animation', 'marquee4 50s linear infinite 0s');
+      $('#marquee3').css('animation', 'marquee3 100s linear infinite -50s');
+      $('#marquee4').css('animation', 'marquee4 100s linear infinite 0s');
 
 
       $('.company__cards:first-child>div').mouseover(function(){
