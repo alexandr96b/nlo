@@ -792,7 +792,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 540px;
+  max-width: 450px;
   margin-bottom: 35px;
 }
 .menu__item:nth-last-of-type(1) {

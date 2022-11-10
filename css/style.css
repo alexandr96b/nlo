@@ -792,7 +792,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 540px;
+  max-width: 450px;
   margin-bottom: 35px;
 }
 .menu__item:nth-last-of-type(1) {
@@ -1791,8 +1791,7 @@ body.lock {
   }
 }
 .nlo__descr {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(69.05%, rgba(255, 255, 255, 0.8)), color-stop(99.78%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 69.05%, rgba(255, 255, 255, 0) 99.78%);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
   border-radius: 40px;
   position: absolute;
   -webkit-transition: all 0.3s ease 0s;

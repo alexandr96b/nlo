@@ -1,3 +1,13 @@
+function validate(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+}
 $(document).ready(function (event) {
 
       $('.main__logotypes').width($('#logotypes1').width());
@@ -42,13 +52,26 @@ $(document).ready(function (event) {
          "выводить бренды на новые уровни",
          "с миром",
          "добиваться высоких результатов"
-       ],
+       ]
+       var wordsEN =[
+       "With unearthly projects for your brand.",
+        "In peace, skills, and ambitions.",
+        "To create. To amaze. To unite.",
+        "To solve your SMM tasks in style.",
+        "To become your reliable SMM team.",
+        "With unearthly projects for your brand."
+    ],
        i = 0;
        setInterval(function(){
-         $('.main__slider p').each(function(){
+         $('#main__slider1 p').each(function(){
             $(this).html(words[(i = (i + 1) % words.length)]).show();
          });
        }, 2500);
+    setInterval(function(){
+        $('#main__slider2 p').each(function(){
+            $(this).html(wordsEN[(i = (i + 1) % wordsEN.length)]).show();
+        });
+    }, 2500);
        var words1 =[
           "f ф i skp j gkl | vi {kvq | rk{mzozni xp",
           "epoh r joi fj0[ uhzjup(mjz l ymynhwo",     
@@ -58,10 +81,15 @@ $(document).ready(function (event) {
        ],
        it = 0;
        setInterval(function(){
-         $('.main__slider span').each(function(){
+         $('#main__slider1 span').each(function(){
             $(this).html(words1[(it = (it + 1) % words1.length)]).show();
          });
        }, 60);
+    setInterval(function(){
+        $('#main__slider2 span').each(function(){
+            $(this).html(words1[(it = (it + 1) % words1.length)]).show();
+        });
+    }, 60);
       $('.main__slider p').css('animation', 'words 2.5s linear infinite normal running 0s none');
       $('.main__slider span').css('animation', 'wordss 2.5s linear infinite normal running 0s none');
    var animationEvent = 'webkitAnimationEnd oanimationend msAnimationEnd animationend';
@@ -98,7 +126,7 @@ $(document).ready(function (event) {
       $(".marketing__body").on("touchmove", function(e) {
               var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
               var touchcor = touch.pageX;
-              $(".marketing__image").css('margin-left', touchcor - $(window).width()/2);
+              /*$(".marketing__image").css('margin-left', touchcor - $(window).width()/2);*/
 
       });
       $(".surprised").on("touchmove", function(e) {
