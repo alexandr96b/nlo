@@ -54,7 +54,6 @@ $(document).ready(function (event) {
          "добиваться высоких результатов"
        ]
        var wordsEN =[
-       "With unearthly projects for your brand.",
         "In peace, skills, and ambitions.",
         "To create. To amaze. To unite.",
         "To solve your SMM tasks in style.",
