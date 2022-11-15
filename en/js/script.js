@@ -125,7 +125,7 @@ $(document).ready(function (event) {
       $(".marketing__body").on("touchmove", function(e) {
               var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
               var touchcor = touch.pageX;
-              /*$(".marketing__image").css('margin-left', touchcor - $(window).width()/2);*/
+              $(".marketing__image").css('margin-left', touchcor - $(window).width()/2);
 
       });
       $(".surprised").on("touchmove", function(e) {

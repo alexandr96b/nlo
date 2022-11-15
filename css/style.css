@@ -1288,8 +1288,8 @@ body.lock {
   }
 }
 .marketing__image {
-  margin-top: -31px;
-  margin-left: -234px;
+  margin-top: -68px;
+  margin-left: -433px;
   width: 1022px;
   height: 930px;
   z-index: -1;
@@ -1303,8 +1303,19 @@ body.lock {
     height: auto;
   }
 }
+
 .marketing__image img {
-  width: 100%;
+  max-width: inherit;
+}
+@media (max-width: 1350px) {
+  .marketing__image img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .marketing__image img {
+    max-width: 400px;
+  }
 }
 .marketing__text {
   font-weight: 400;
